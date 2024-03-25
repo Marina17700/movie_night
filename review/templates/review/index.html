@@ -1,0 +1,18 @@
+{% extends "review/cards.html" %}
+{% load static %}
+
+{% block title %}All Reviews{% endblock %}
+
+{% block layout %}<div class="row row-cols-1 row-cols-xl-2 row-cols-md-1 g-4">{% endblock %}
+  {% block feature %}
+  <div class="card">
+    <div class="row g-0">
+      <div class="col-md-5">
+        <img class="img-fluid" src="{{ entry.image }}" alt="{{ entry.title }}">
+      </div>
+      <div class="col-md-7">
+        <div class="card-body">
+          <h4 class="card-title mb-0">{{ entry.title }}&nbsp;<small><strong
+                class="text-muted">{{ entry.description }}</strong></small></h4>
+    {% endblock %}
+    {% block add %} </div></div>{% endblock %}

@@ -1,0 +1,148 @@
+.search-box {
+     background: #cacad2;
+     height: 35px;
+     border-radius: 35px;
+     padding-left: 6px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     text-decoration: none;
+}
+
+.search-box:hover>.search-btn {
+     color: #343a40;
+     text-decoration: none;
+}
+
+.search-btn {
+     color: #343a40;
+     background: #ffc107;
+     width: 43px;
+     height: 35px;
+     border-radius: 35px;
+     font-size: 23px;
+     display: flex;
+     cursor: pointer;
+     justify-content: center;
+     align-items: center;
+     text-decoration: none;
+}
+
+.search-btn>i {
+     font-size: 16px;
+}
+
+.search-txt {
+     border: none;
+     background: none;
+     outline: none;
+     width: 280px;
+     padding-left: 8px;
+     padding-right: 8px;
+     color: #343a40;
+     font-size: 16px;
+     font-weight: bold;
+
+}
+
+.stars input {
+     position: absolute;
+     left: -999999px;
+}
+
+.stars a {
+     display: inline-block;
+     padding-right: 15px;
+     text-decoration: none;
+     margin: 0;
+}
+
+.stars a:after {
+     position: relative;
+     font-size: 38px;
+     font-family: 'FontAwesome', serif;
+     display: block;
+     content: "\f005";
+     color: #9e9e9e;
+     text-decoration: none;
+}
+
+span {
+     font-size: 0;
+     /* trick to remove inline-element's margin */
+}
+
+.stars a:hover~a:after {
+     color: #9e9e9e !important;
+     text-decoration: none;
+}
+
+span.active a.active~a:after {
+     color: #9e9e9e;
+
+}
+
+span:hover a:after {
+     color: rgb(255, 191, 0) !important;
+
+}
+
+span.active a:after,
+.stars a.active:after {
+     color: rgb(255, 191, 0);
+
+}
+
+.card-img-top {
+     border-top-left-radius: 1rem;
+     border-top-right-radius: 1rem;
+}
+
+.card {
+     border-radius: 1rem;
+     color: #fcd53f;
+}
+
+.rate {
+     font-size: 38px;
+     text-align: right;
+}
+
+.container-fluid {
+     padding-left: 12.5%;
+     padding-right: 12.5%;
+}
+
+.rating {
+     font-size: 18px;
+     height: 100px;
+     resize:none;
+}
+
+.spinner-border.text-light{
+     display: none;
+}
+
+.rated{
+     font-size: 21px;
+}
+
+.img-fluid {
+     border-top-left-radius: 1rem!important;
+}
+
+.reviewer {
+     color: #aba398;
+     font-size: 16px;
+     text-decoration: none;
+     text-transform:uppercase;
+     font-weight: bold;
+}
+
+.rated_on {
+     font-size:15px;
+}
+
+.votes {
+     font-size:17px;
+}
